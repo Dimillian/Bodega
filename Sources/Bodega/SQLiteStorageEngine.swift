@@ -326,19 +326,19 @@ private extension SQLiteStorageEngine {
 }
 
 private extension SQLiteStorageEngine.Expressions {
-    var keyRow: Expression<String> {
+    var keyRow: SQLite.Expression<String> {
         Expression<String>("key")
     }
 
-    var dataRow: Expression<Data> {
+    var dataRow: SQLite.Expression<Data> {
         Expression<Data>("value")
     }
 
-    var createdAtRow: Expression<Date> {
+    var createdAtRow: SQLite.Expression<Date> {
         Expression<Date>("createdAt")
     }
 
-    var updatedAtRow: Expression<Date> {
+    var updatedAtRow: SQLite.Expression<Date> {
         Expression<Date>("updatedAt")
     }
 }
